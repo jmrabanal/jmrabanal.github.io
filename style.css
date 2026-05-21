@@ -1,5 +1,29 @@
-body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f4f4f4; }
-header { text-align: center; padding: 20px; background: white; margin-bottom: 20px; }
-article { background: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
-.meta { color: #666; font-size: 0.9em; }
-footer { text-align: center; margin-top: 20px; font-size: 0.8em; }
+body { 
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 20px; 
+  background: #ffffff; 
+  color: #000000; 
+}
+header { 
+  text-align: center; 
+  padding: 20px; 
+  background: rgb(255, 255, 255); 
+  margin-bottom: 20px; 
+}
+article { 
+  background: rgb(255, 255, 255); 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  border-radius: 5px; 
+}
+.meta { 
+  color: #aaa; 
+  font-size: 0.9em; 
+}
+footer { 
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 0.8em; 
+}
