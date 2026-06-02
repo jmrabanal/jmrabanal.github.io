@@ -18,6 +18,20 @@ article {
   margin-bottom: 20px; 
   border-radius: 5px; 
 }
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    min-height: 100vh;      
+    margin: 0;
+    text-align: center;     
+    font-family: sans-serif; 
+}
+
+/* Optional: Add some space between your elements */
+    margin: 20px 0;
+}
 .meta { 
   color: #aaa; 
   font-size: 0.9em; 
