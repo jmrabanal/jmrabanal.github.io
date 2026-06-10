@@ -1,10 +1,17 @@
-body { 
-  font-family: Arial, sans-serif; 
-  line-height: 1.6; 
-  margin: 0; 
-  padding: 20px; 
-  background: #ffffff; 
-  color: #000000; 
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    min-height: 100vh;      
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center;     
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background: #ffffff; 
+    color: #000000; 
 }
 header { 
   text-align: center; 
@@ -18,32 +25,47 @@ article {
   margin-bottom: 20px; 
   border-radius: 5px; 
 }
-body {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center; 
-    min-height: 100vh;      
-    margin: 0;
-    text-align: center;     
-    font-family: sans-serif;
+.video-container {
+    width: 100%;
+    max-width: 560px; 
+    aspect-ratio: 16 / 9; 
 }
-iframe {
-    margin: 20px 0;
+.video-container iframe {
+    width: 100%;
+    height: 100%;
 }
 .blog-image {
-    width: 1000px; 
+    width: 100%; 
+    max-width: 1000px; 
     height: auto; 
     display: block;
     margin: 10px 0;
-    box-align: center
 }
 .meta { 
   color: #aaa; 
   font-size: 0.9em; 
 }
+p, h1, h2, a {
+    max-width: 100%;       /* Keeps text strictly inside the screen limits */
+    overflow-wrap: break-word; /* Force-breaks long text strings or URLs if needed */
+    box-sizing: border-box; 
+}
 footer { 
   text-align: center; 
   margin-top: 20px; 
   font-size: 0.8em; 
+}
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start; 
+        padding: 40px 15px;          
+    }
+    
+    h1 {
+        font-size: 1.8rem;           
+    }
+
+    p {
+        font-size: 1rem;             
+    }
 }
